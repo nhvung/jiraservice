@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <ProjectReference Include="../VSSystem.Extensions.Hosting/VSSystem.Extensions.Hosting.csproj" />
+    <ProjectReference Include="../../../netstd/JiraLib/JiraLib.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <Platforms>AnyCPU;x64</Platforms>
+    <AssemblyName>VSSystem.Service.JiraService</AssemblyName>
+    <Version>2.0.2</Version>
+    <FileVersion>2.0.2</FileVersion>
+    <OutputType>Library</OutputType>
+    <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
+    <OutputPath>bin</OutputPath>
+  </PropertyGroup>  
+</Project>

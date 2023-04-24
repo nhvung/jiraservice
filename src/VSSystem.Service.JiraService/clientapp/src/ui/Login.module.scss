@@ -1,0 +1,22 @@
+.Login {
+    &-gettoken {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        bottom: 35%;
+
+        &-link {
+            padding: 3px;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+
+            &:hover {
+                color: blue;
+            }
+        }
+    }
+}

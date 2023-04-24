@@ -1,0 +1,234 @@
+.List {
+    position: absolute;
+    margin-top: 10px;
+    height: 93%;
+    width: 95%;
+    border: var(--default-border);
+    box-shadow: var(--default-box-shadow);
+    border-radius: var(--default-border-radius);
+    background-color: #fff !important;
+
+    &-layout {
+        position: absolute;
+        background-color: #fff !important;
+
+        &-header {
+            position: relative;
+            margin-top: 10px;
+            background-color: #fff;
+
+            &-white {
+                background-color: #fff;
+            }
+        }
+
+        &-footer {
+            position: fixed;
+            bottom: 10px;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+
+            &-account {
+                display: block;
+                padding: 0;
+                color: darkred;
+            }
+
+            div {
+                font-weight: bold;
+                padding: 3px;
+            }
+        }
+    }
+
+    &-container-stories,
+    &-container-usages {
+        position: relative;
+        width: 99%;
+        height: 100%;
+    }
+
+    &-container-stories {
+        &-hide {
+            display: none;
+        }
+    }
+
+    &-container-usages {
+        &-hide {
+            display: none;
+        }
+    }
+
+    &-list,
+    &-usage-list {
+        position: relative;
+        font-size: 9pt;
+    }
+
+    &-list {
+        position: relative;
+
+        thead {
+            tr {
+
+                th:nth-child(2) {
+                    width: 50px;
+                }
+
+                th:nth-child(3) {
+                    width: 80px;
+                }
+
+                th:nth-child(4) {
+                    // width: auto;
+                }
+
+                th:nth-child(5) {
+                    width: 150px;
+                }
+
+                th:nth-child(6) {
+                    width: 100px;
+                }
+
+                th:nth-child(7) {
+                    width: 80px;
+                }
+
+                th:nth-child(8) {
+                    width: 150px;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td:nth-child(3) {
+                    width: auto;
+                }
+
+                td:nth-child(6) {
+                    width: 80px;
+                }
+            }
+        }
+
+        &-row {
+            &-story {
+                background-color: #83b3e948 !important;
+
+                td {
+                    border-top: 1px solid #aaa;
+                }
+            }
+
+            &-subtask {
+                background-color: #fff !important;
+            }
+
+            &-story,
+            &-subtask {
+                &:hover {
+                    background-color: #eee !important;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        textarea,
+        input {
+            font-family: var(--default-font);
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+
+        &-div {
+            &-summary {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        &-txt {
+            &-sps {
+                border: none;
+                outline: none;
+                text-align: center;
+                background-color: transparent;
+            }
+
+            &-summary,
+            &-psummary {
+                outline: none;
+            }
+
+            &-summary {
+                margin-left: 20px;
+            }
+        }
+
+        &-task-link {
+            text-decoration: none;
+            color: #000;
+
+            &:hover {
+                font-weight: bold;
+                text-decoration: dashed;
+                color: blue;
+            }
+        }
+    }
+
+    &-usage-list {
+        position: relative;
+
+        &-row {
+            &-assignee {
+                background-color: #4663b4 !important;
+                color: #fff;
+                font-weight: bold;
+                top: 30px;
+                position: sticky;
+            }
+
+            &-ptask {
+                background-color: #83b3e948 !important;
+                // font-weight: bold;
+
+            }
+
+            &-task {
+                background-color: #fff !important;
+            }
+
+            &-ptask,
+            &-task {
+                &:hover {
+                    background-color: #eee !important;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        thead {
+            tr {
+                th:nth-child(1) {
+                    width: 80px;
+                }
+            }
+        }
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
